@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ArchitectureMVVM" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="EU9-RZ-uQM" id="8QI-56-B5D"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J71-V3-Uon">
-                    <rect key="frame" x="177" y="415.66666666666669" width="39" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EU9-RZ-uQM">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="J71-V3-Uon" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="D8b-qj-gFh"/>
-                <constraint firstItem="J71-V3-Uon" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vrB-13-Bo8"/>
+                <constraint firstItem="EU9-RZ-uQM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VvM-Qo-TM1"/>
+                <constraint firstItem="EU9-RZ-uQM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WRK-EZ-XEg"/>
+                <constraint firstAttribute="bottom" secondItem="EU9-RZ-uQM" secondAttribute="bottom" id="pf2-bZ-lgo"/>
+                <constraint firstItem="EU9-RZ-uQM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xHH-JA-fJM"/>
             </constraints>
-            <point key="canvasLocation" x="138" y="20"/>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
